@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador Mario Bros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- CABECERA DEL PROYECTO ---------------------------------------------------------------->
+    <header>
+      <div class="imagenes_header">
+        <img src="images/logoalura.svg" alt="" />
+        <img class="superEncriptado" src="images/superencriptador.png" alt="" />
+      </div>
+    </header>
+    <!-- CUERPO DEL PROYECTO ---------------------------------------------------------------->
+    <main>
+      <div class="sections">
+        <!-- CUERPO DEL PROYECTO "SECCION IZQUIERDA"--------->
+        <section class="section1">
+          <div class="section1_limite section1_textarea">
+            <textarea
+              id="textoEncriptado"
+              class="textarea"
+              autofocus
+              placeholder="Ingrese el texto aqui"
+            ></textarea>
+          </div>
+          <div class="section1_limite section1_parrafo">
+            <img class="imagen_alerta" src="images/alerta.svg" alt="" />
+            <p class="parrafo_alerta">Solo letras minúsculas y sin acentos</p>
+          </div>
+          <!-- BOTONES ENCRIPTAR Y DESENCRIPTAR--------->
+          <div class="section1_limite section1_botones">
+            <input
+              class="btn-encriptar"
+              type="button"
+              value="Encriptar"
+              onclick="encriptar()"
+            />
+            <input
+              class="btn-desencriptar"
+              type="button"
+              value="Desencriptar"
+              onclick="desencriptar()"
+            />
+          </div>
+        </section>
+        <!-- CUERPO DEL PROYECTO "SECCION DERECHA"--------->
+        <section class="section2">
+          <img
+            class="animacion"
+            src="images/animacionmariobros.gif"
+            alt=""
+            loading="lazy"
+            id="gifMario"
+          />
+          <div class="section2_content">
+            <div class="section2_cajah2">
+              <h2 id="textoNoEncontrado" class="section2_h2">
+                Ningún mensaje fue encontrado
+              </h2>
+            </div>
+            <div class="section2_parrafocaja">
+              <p id="ingreseTexto2" class="section2_parrafo">
+                Ingresa el texto que desees encriptar o desencriptar.
+              </p>
+            </div>
+            <div>
+              <input
+                id="copiar"
+                class="btn-copiar"
+                type="button"
+                value="Copiar"
+                ocultar
+                onclick="copy()"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Web Developer : <span>elias.esmit@hotmail.com</span></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
